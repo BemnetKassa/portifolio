@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 Hi, I'm{' '}
-                <span className="gradient-text">John Doe</span>
+                <span className="gradient-text">Bemnet Kassa</span>
               </h1>
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-medium">
                 Full Stack Developer
@@ -100,7 +100,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80"
-                    alt="John Doe - Full Stack Developer"
+                    alt="Bemnet Kassa - Full Stack Developer"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>

@@ -39,7 +39,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#home" className="text-xl font-bold gradient-text">
-              John Doe
+              Bemnet Kassa
             </a>
           </div>
 

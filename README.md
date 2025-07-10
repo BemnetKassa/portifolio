@@ -1,5 +1,5 @@
 
-# John Doe - Full Stack Developer Portfolio
+# Bemnet Kassa - Full Stack Developer Portfolio
 
 A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS. This portfolio showcases professional development skills and projects, designed to attract internship opportunities and freelance clients.
 
@@ -185,7 +185,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 If you have questions or need help customizing this portfolio:
 
-- **Email**: john@example.com
+- **Email**: bemnet@example.com
 - **LinkedIn**: [Your LinkedIn Profile]
 - **GitHub**: [Your GitHub Profile]
 

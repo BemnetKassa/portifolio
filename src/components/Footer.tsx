@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Heart, Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
@@ -49,7 +48,7 @@ const Footer = () => {
           <div className="grid md:grid-cols-4 gap-8">
             {/* Brand Section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold gradient-text">John Doe</h3>
+              <h3 className="text-xl font-bold gradient-text">Bemnet Kassa</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Full Stack Developer passionate about creating exceptional digital 
                 experiences through clean code and innovative solutions.
@@ -124,7 +123,7 @@ const Footer = () => {
         <div className="py-6 border-t border-border">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p className="flex items-center gap-1">
-              © {currentYear} John Doe. Made with 
+              © {currentYear} Bemnet Kassa. Made with 
               <Heart className="w-4 h-4 text-red-500" fill="currentColor" /> 
               and lots of coffee.
             </p>

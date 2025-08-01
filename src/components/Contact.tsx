@@ -46,20 +46,20 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: 'Email',
-      value: 'john@example.com',
-      href: 'mailto:john@example.com'
+      value: 'bemnetkassa79@gmail.com',
+      href: 'mailto:bemnetkassa79@gmail.com'
     },
     {
       icon: <Phone className="w-5 h-5" />,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+251989765470',
+      href: 'tel:+251989765470'
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com'
+      value: 'Arba-Minch, Ethiopia',
+      href: 'https://g.co/kgs/KnSSnQA'
     }
   ];
 
@@ -73,13 +73,13 @@ const Contact = () => {
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-5 h-5" />,
-      url: 'https://linkedin.com',
+      url: 'https://github.com/BemnetKassa',
       color: 'hover:text-blue-400'
     },
     {
       name: 'Twitter',
       icon: <Twitter className="w-5 h-5" />,
-      url: 'https://twitter.com',
+      url: 'https://x.com/BemnetKassa',
       color: 'hover:text-blue-300'
     }
   ];

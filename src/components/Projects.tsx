@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import ProjectCard, { Project } from './ProjectCard';
 import { Button } from '@/components/ui/button';
+import fruitPic from '../picture/p1.jpg';
+import AMUpic from '../picture/amu.jpg';
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
@@ -10,31 +12,31 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: '1',
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with modern payment integration and admin dashboard.',
-      longDescription: 'Built a comprehensive e-commerce platform featuring user authentication, product management, shopping cart functionality, payment processing with Stripe, and an admin dashboard for inventory management.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Tailwind CSS'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://demo.com',
+      title: 'Fruit delivery web app',
+      description: 'A full-stack fruit delivery web solution with modern system integration.',
+      longDescription: 'Built a comprehensive fruit delivery platform featuring user authentication, product management, shopping cart functionality, payment processing, this project aims to delivery fruits from Arba-Minch to other part of the country.',
+      image: fruitPic,
+      technologies: [ 'html', 'CSS', 'Node.js', 'mySQL', 'php', 'javaScript'],
+      githubUrl: 'https://github.com/BemnetKassa/Fruit-delivery-web-app',
+      liveUrl: '',
       date: 'Dec 2024',
       featured: true
     },
     {
       id: '2',
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates and team features.',
-      longDescription: 'Developed a full-featured task management app with real-time collaboration, drag-and-drop functionality, team management, and notification system using modern web technologies.',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-      technologies: ['Next.js', 'TypeScript', 'Socket.io', 'MongoDB', 'Redis'],
-      githubUrl: 'https://github.com',
-      liveUrl: 'https://demo.com',
-      date: 'Nov 2024',
+      title: 'Online voting system',
+      description: 'This is a web-based voting platform designed for the AMU Tech Hub project showcase to allow students and participants to vote for their favorite projects in a fair and user-friendly way.',
+      longDescription: 'This project is a full-stack web application for managing and conducting live voting on projects, built with Node.js, Express, and vanilla JavaScript.',
+      image: AMUpic,
+      technologies: ['Node.js', 'javaScript', 'express'],
+      githubUrl: 'https://github.com/BemnetKassa/final-project-voting-system',
+      liveUrl: '',
+      date: 'april 2025',
       featured: true
     },
     {
       id: '3',
-      title: 'Weather Dashboard',
+      title: 'Weather Dashboard-coming soon!',
       description: 'A responsive weather application with location-based forecasts and interactive maps.',
       longDescription: 'Created a comprehensive weather dashboard featuring current conditions, 7-day forecasts, interactive maps, and location-based weather alerts with beautiful data visualizations.',
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80',
@@ -46,7 +48,7 @@ const Projects = () => {
     },
     {
       id: '4',
-      title: 'Social Media Dashboard',
+      title: 'Social Media Dashboard-coming soon!',
       description: 'Analytics dashboard for social media management with data visualization.',
       longDescription: 'Built a comprehensive social media analytics dashboard with real-time metrics, engagement tracking, content scheduling, and detailed reporting features.',
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80',
@@ -57,7 +59,7 @@ const Projects = () => {
     },
     {
       id: '5',
-      title: 'Recipe Finder App',
+      title: 'Recipe Finder App-coming soon!',
       description: 'Mobile-first recipe application with ingredient-based search and meal planning.',
       longDescription: 'Developed a mobile-first recipe application featuring ingredient-based search, meal planning, shopping lists, and nutritional information with offline capabilities.',
       image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
@@ -68,7 +70,7 @@ const Projects = () => {
     },
     {
       id: '6',
-      title: 'Fitness Tracker',
+      title: 'Fitness Tracker-coming soon!',
       description: 'Personal fitness tracking application with workout plans and progress analytics.',
       longDescription: 'Created a comprehensive fitness tracking app with workout planning, progress tracking, exercise library, and detailed analytics to help users achieve their fitness goals.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',

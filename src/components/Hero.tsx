@@ -2,6 +2,7 @@
 import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import profileImg from '../picture/for the web.jpg'; // <-- Add this import
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -65,7 +66,7 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex items-center gap-6 pt-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/BemnetKassa" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-3 rounded-full bg-card hover:bg-accent transition-colors hover:scale-110 transform"
@@ -73,7 +74,7 @@ const Hero = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/bemnet-kassa-bb975b34a/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="p-3 rounded-full bg-card hover:bg-accent transition-colors hover:scale-110 transform"
@@ -81,7 +82,7 @@ const Hero = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="mailto:john@example.com" 
+                href="mailto:bemnetkassa79@gmail.com" 
                 className="p-3 rounded-full bg-card hover:bg-accent transition-colors hover:scale-110 transform"
               >
                 <Mail className="w-5 h-5" />
@@ -99,7 +100,7 @@ const Hero = () => {
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                   <img
-                    src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80"
+                    src={profileImg}
                     alt="Bemnet Kassa - Full Stack Developer"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />

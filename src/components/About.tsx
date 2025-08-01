@@ -7,32 +7,28 @@ const About = () => {
     {
       category: 'Frontend',
       icon: <Globe className="w-6 h-6" />,
-      technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vue.js']
+      technologies: ['html','css', 'Tailwind CSS', 'javaScript', 'React', 'Next.js', ]
     },
     {
       category: 'Backend',
       icon: <Server className="w-6 h-6" />,
-      technologies: ['Node.js', 'Python', 'Express', 'Django', 'REST APIs']
+      technologies: ['Node.js', 'Express', 'PHP']
     },
     {
       category: 'Database',
       icon: <Database className="w-6 h-6" />,
-      technologies: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Prisma']
+      technologies: [ 'MongoDB', 'MySQL', ]
     },
-    {
-      category: 'Mobile',
-      icon: <Smartphone className="w-6 h-6" />,
-      technologies: ['React Native', 'Flutter', 'iOS', 'Android', 'Expo']
-    },
+  
     {
       category: 'Tools',
       icon: <Code className="w-6 h-6" />,
-      technologies: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma']
+      technologies: ['Git', 'Figma']
     },
     {
       category: 'Design',
       icon: <Palette className="w-6 h-6" />,
-      technologies: ['UI/UX', 'Figma', 'Adobe XD', 'Photoshop', 'Sketch']
+      technologies: ['UI/UX', 'Figma', 'Adobe XD', 'Photoshop',]
     }
   ];
 
@@ -44,7 +40,7 @@ const About = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with 3+ years of experience creating 
+            I'm a passionate full-stack developer with year of experience creating 
             digital solutions that bridge the gap between design and technology.
           </p>
         </div>
@@ -54,8 +50,8 @@ const About = () => {
           <div className="space-y-6 animate-fade-in">
             <div className="prose prose-lg max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                My journey into web development started during my computer science studies, 
-                where I discovered my passion for creating user-centric applications. I love 
+                My journey into web development started during my Software Engineering studies, 
+                where I discovered my passion for creating user-centric websites. I love 
                 the challenge of turning complex problems into simple, beautiful solutions.
               </p>
               
@@ -74,15 +70,15 @@ const About = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-6">
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">50+</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">3+</div>
+                <div className="text-2xl font-bold text-primary">2+</div>
                 <div className="text-sm text-muted-foreground">Years</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">20+</div>
+                <div className="text-2xl font-bold text-primary">planty</div>
                 <div className="text-sm text-muted-foreground">Technologies</div>
               </div>
             </div>

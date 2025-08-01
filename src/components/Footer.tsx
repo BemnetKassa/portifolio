@@ -19,17 +19,17 @@ const Footer = () => {
     {
       name: 'GitHub',
       icon: <Github className="w-5 h-5" />,
-      url: 'https://github.com'
+      url: 'https://github.com/BemnetKassa'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-5 h-5" />,
-      url: 'https://linkedin.com'
+      url: 'https://www.linkedin.com/in/bemnet-kassa-bb975b34a/'
     },
     {
       name: 'Email',
       icon: <Mail className="w-5 h-5" />,
-      url: 'mailto:john@example.com'
+      url: 'mailto:bemnetkassa79@gmail.com'
     }
   ];
 
@@ -94,7 +94,7 @@ const Footer = () => {
                 <li>Backend Development</li>
                 <li>Full Stack Solutions</li>
                 <li>UI/UX Design</li>
-                <li>Mobile Development</li>
+                
               </ul>
             </div>
 
@@ -102,9 +102,9 @@ const Footer = () => {
             <div className="space-y-4">
               <h4 className="font-semibold">Get In Touch</h4>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>San Francisco, CA</p>
-                <p>john@example.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>Arba Minch/ Ethiopia</p>
+                <p>bemnetkassa79@gmail.com</p>
+                <p>+251989765470</p>
               </div>
               
               {/* Back to Top Button */}

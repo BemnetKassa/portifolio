@@ -7,7 +7,7 @@ const About = () => {
     {
       category: 'Frontend',
       icon: <Globe className="w-6 h-6" />,
-      technologies: ['html','css', 'Tailwind CSS', 'javaScript', 'React', 'Next.js', ]
+      technologies: ['html','css', 'Tailwind CSS', 'shadcn-ui', 'framer-motion', 'javaScript', 'typescript', 'React', 'Next.js', ]
     },
     {
       category: 'Backend',
@@ -17,13 +17,13 @@ const About = () => {
     {
       category: 'Database',
       icon: <Database className="w-6 h-6" />,
-      technologies: [ 'MongoDB', 'MySQL', ]
+      technologies: [ 'MongoDB', 'PostgreSQL', 'MySQL', 'mongoose',]
     },
   
     {
       category: 'Tools',
       icon: <Code className="w-6 h-6" />,
-      technologies: ['Git', 'Figma']
+      technologies: ['Git', 'GitHub', 'prisma', 'VS Code', 'Postman', 'Figma', 'Chrome DevTools']
     },
     {
       category: 'Design',

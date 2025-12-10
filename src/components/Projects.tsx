@@ -1,9 +1,9 @@
-
 import React, { useState } from 'react';
 import ProjectCard, { Project } from './ProjectCard';
 import { Button } from '@/components/ui/button';
 import fruitPic from '../picture/p1.jpg';
 import AMUpic from '../picture/amu.jpg';
+import ThreeDCarousel, { ThreeDCarouselItem } from './3d_carosel';
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
@@ -74,15 +74,34 @@ const Projects = () => {
       description: 'Personal fitness tracking application with workout plans and progress analytics.',
       longDescription: 'Created a comprehensive fitness tracking app with workout planning, progress tracking, exercise library, and detailed analytics to help users achieve their fitness goals.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
-      technologies: ['Flutter', 'Django', 'PostgreSQL', 'JWT'],
+      technologies: ['vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
       githubUrl: 'https://github.com',
+      date: 'Jul 2024',
+      featured: false
+    },
+      {
+      id: '7',
+      title: 'Smart Menu web app',
+      description: 'a smart menu web application that allows users to browse and order food from a digital menu using QR codes.',
+      longDescription: 'This project is a full-stack web application that enables restaurants to create digital menus accessible via QR codes, allowing customers to easily browse and place orders from their smartphones.',
+      image: 'src/picture/hero-dining.jpg',
+      technologies: ['vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
+      githubUrl: 'https://github.com/BemnetKassa/Smart-menu',
       date: 'Jul 2024',
       featured: false
     }
   ];
 
-  const displayedProjects = showAll ? projects : projects.slice(0, 4);
-  const featuredProjects = projects.filter(p => p.featured);
+  const carouselItems: ThreeDCarouselItem[] = projects.map((project, index) => ({
+    id: index,
+    title: project.title,
+    brand: project.date, // Using date for the 'brand' field
+    description: project.description,
+    longDescription: project.longDescription,
+    tags: project.technologies,
+    imageUrl: project.image,
+    link: project.liveUrl || project.githubUrl,
+  }));
 
   return (
     <section id="projects" className="py-20 section-padding">
@@ -90,7 +109,7 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Featured <span className="gradient-text">Projects</span>
+            My <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Here are some of my recent projects that showcase my skills in full-stack development, 
@@ -98,45 +117,9 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Featured Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {displayedProjects.map((project, index) => (
-            <ProjectCard 
-              key={project.id} 
-              project={project} 
-              index={index}
-            />
-          ))}
-        </div>
-
-        {/* Show More/Less Button */}
-        {projects.length > 4 && (
-          <div className="text-center">
-            <Button
-              onClick={() => setShowAll(!showAll)}
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              {showAll ? 'Show Less' : `Show All Projects (${projects.length})`}
-            </Button>
-          </div>
-        )}
-
-        {/* GitHub CTA */}
-        <div className="mt-16 text-center p-8 bg-card rounded-xl border border-border">
-          <h3 className="text-2xl font-semibold mb-4">Want to see more?</h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Check out my GitHub for more projects, contributions to open source, 
-            and code samples that demonstrate my development skills.
-          </p>
-          <Button
-            onClick={() => window.open('https://github.com', '_blank')}
-            size="lg"
-            className="bg-primary hover:bg-primary/90"
-          >
-            Visit My GitHub
-          </Button>
+        {/* All Projects Carousel */}
+        <div className="mb-24">
+          <ThreeDCarousel items={carouselItems} />
         </div>
       </div>
     </section>

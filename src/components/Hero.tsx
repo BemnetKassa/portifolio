@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import profileImg from '../picture/for the web.jpg'; // <-- Add this import
+import profileImg from '../picture/for the web.jpg';
+import { AuroraTextEffect } from './animated-components/text_effect';
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
                 Hi, I'm{' '}
-                <span className="gradient-text">Bemnet Kassa</span>
+                <AuroraTextEffect text="Bemnet Kassa" />
               </h1>
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-medium">
                 Full Stack Developer

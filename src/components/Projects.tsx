@@ -103,7 +103,8 @@ const Projects = () => {
     longDescription: project.longDescription,
     tags: project.technologies,
     imageUrl: project.image,
-    link: project.liveUrl || project.githubUrl,
+    liveUrl: project.liveUrl && project.liveUrl !== '' ? project.liveUrl : undefined,
+    githubUrl: project.githubUrl && project.githubUrl !== '' ? project.githubUrl : undefined,
   }));
 
   return (

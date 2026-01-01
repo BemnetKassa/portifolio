@@ -27,7 +27,8 @@ export interface ThreeDCarouselItem {
   description: string;
   tags: string[];
   imageUrl: string;
-  link: string;
+  liveUrl?: string;
+  githubUrl?: string;
   longDescription?: string;
 }
 
@@ -264,12 +265,21 @@ const ThreeDCarousel = ({
                 ))}
               </div>
             </div>
-            <DialogFooter className="mt-6">
-              <Button asChild variant="outline">
-                <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-                  View Project <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
+            <DialogFooter className="mt-6 flex gap-2">
+              {selectedProject.liveUrl && selectedProject.liveUrl !== '' && (
+                <Button asChild variant="outline">
+                  <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer">
+                    View Project <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </Button>
+              )}
+              {selectedProject.githubUrl && selectedProject.githubUrl !== '' && (
+                <Button asChild variant="outline">
+                  <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer">
+                    View on GitHub <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </Button>
+              )}
               <Button onClick={() => setSelectedProject(null)} variant="ghost">
                 Close
               </Button>

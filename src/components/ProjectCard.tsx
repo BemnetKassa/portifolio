@@ -115,7 +115,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
           >
             Learn more
           </Button>
-          {project.githubUrl && (
+          {project.githubUrl && project.githubUrl !== '' && (
             <Button
               variant="outline"
               size="sm"
@@ -126,7 +126,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               View Code
             </Button>
           )}
-          {project.liveUrl && (
+          {project.liveUrl && project.liveUrl !== '' && (
             <Button
               size="sm"
               className="flex-1 bg-primary hover:bg-primary/90"
@@ -159,7 +159,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             ))}
           </div>
           <DialogFooter className="flex gap-2">
-            {project.liveUrl && (
+            {project.liveUrl && project.liveUrl !== '' && (
               <Button asChild variant="default">
                 <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
@@ -167,7 +167,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 </a>
               </Button>
             )}
-            {project.githubUrl && (
+            {project.githubUrl && project.githubUrl !== '' && (
               <Button asChild variant="outline">
                 <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                   <Github className="w-4 h-4 mr-2" />

@@ -58,17 +58,6 @@ const Projects = () => {
       featured: false
     },
     {
-      id: '5',
-      title: 'Recipe Finder App-coming soon!',
-      description: 'Mobile-first recipe application with ingredient-based search and meal planning.',
-      longDescription: 'Developed a mobile-first recipe application featuring ingredient-based search, meal planning, shopping lists, and nutritional information with offline capabilities.',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Recipe API'],
-      githubUrl: 'https://github.com',
-      date: 'Aug 2024',
-      featured: false
-    },
-    {
       id: '6',
       title: 'Fitness Tracker-coming soon!',
       description: 'Personal fitness tracking application with workout plans and progress analytics.',

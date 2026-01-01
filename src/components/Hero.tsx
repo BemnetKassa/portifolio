@@ -109,7 +109,7 @@ const Hero = () => {
                 </div>
                 {/* Floating elements */}
                 <div className="absolute -top-4 -right-4 w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg animate-bounce">
-                  <span className="text-lg">👋</span>
+                  <span className="text-lg animate-wave origin-bottom-left">👋</span>
                 </div>
               </div>
             </div>

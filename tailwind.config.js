@@ -63,6 +63,15 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       keyframes: {
+        wave: {
+          '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
+          '10%': { transform: 'rotate(14deg) scale(1.1)' },
+          '20%': { transform: 'rotate(-8deg) scale(1.05)' },
+          '30%': { transform: 'rotate(14deg) scale(1.1)' },
+          '40%': { transform: 'rotate(-4deg) scale(1.05)' },
+          '50%': { transform: 'rotate(10deg) scale(1.08)' },
+          '60%': { transform: 'rotate(0deg) scale(1)' },
+        },
         "accordion-down": {
           from: {
             height: "0"
@@ -101,6 +110,7 @@ export default {
         },
       },
       animation: {
+        wave: 'wave 2s infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.6s ease-out",

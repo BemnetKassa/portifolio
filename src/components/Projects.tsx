@@ -59,6 +59,18 @@ const Projects = () => {
       date: 'Jul 2024',
       featured: false
     },
+    {
+      id: '4',
+      title: 'Hotel room booking web app',
+      description: 'A hotel room booking web application that allows users to book rooms online.',
+      longDescription: '.This project is a full-stack web application that provides a platform for users to browse, book, and manage hotel room reservations online, featuring admin authentication, room listings, search functionality.',
+      image: 'src/picture/room.webp',
+      technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
+      githubUrl: 'https://github.com/BemnetKassa/buy-any-car',
+      liveUrl: 'https://buy-anycar.vercel.app/landingPage/dashboard',
+      date: 'Jul 2024',
+      featured: false
+    },
      {
       id: '5',
       title: 'Weather Dashboard-coming soon!',
@@ -82,7 +94,7 @@ const Projects = () => {
       date: 'Jul 2024',
       featured: false
     },
-
+    
   ];
 
   const carouselItems: ThreeDCarouselItem[] = projects.map((project, index) => ({

@@ -66,8 +66,8 @@ const Projects = () => {
       longDescription: '.This project is a full-stack web application that provides a platform for users to browse, book, and manage hotel room reservations online, featuring admin authentication, room listings, search functionality.',
       image: 'src/picture/room.webp',
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
-      githubUrl: 'https://github.com/BemnetKassa/buy-any-car',
-      liveUrl: 'https://buy-anycar.vercel.app/landingPage/dashboard',
+      githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
+      liveUrl: 'https://hotel-booking-and-room-management-s-two.vercel.app/public/dashboard',
       date: 'Jul 2024',
       featured: false
     },

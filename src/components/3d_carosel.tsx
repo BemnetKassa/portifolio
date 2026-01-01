@@ -187,19 +187,17 @@ const ThreeDCarousel = ({
                           ))}
                         </div>
 
-                        <a
-                          href={item.link}
-                          className="text-black-600 flex items-center hover:underline relative group"
-                          onClick={() => {
-                            if (item.link.startsWith("/")) {
-                              window.scrollTo(0, 0);
-                            }
+                        <button
+                          className="text-black-600 flex items-center hover:underline relative group focus:outline-none"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedProject(item);
                           }}
                         >
                           <span className="relative z-10">Learn more</span>
                           <ArrowRight className="ml-2 w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
                           <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
-                        </a>
+                        </button>
                       </div>
                     </CardContent>
                   </Card>

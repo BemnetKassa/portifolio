@@ -34,8 +34,32 @@ const Projects = () => {
       date: 'april 2025',
       featured: true
     },
-    {
+   
+      {
       id: '3',
+      title: 'Smart Menu web app',
+      description: 'a smart menu web application that allows users to browse and order food from a digital menu using QR codes.',
+      longDescription: 'This project is a full-stack web application that enables restaurants to create digital menus accessible via QR codes, allowing customers to easily browse and place orders from their smartphones.',
+      image: 'src/picture/hero-dining.jpg',
+      technologies: ['vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
+      githubUrl: 'https://github.com/BemnetKassa/Smart-menu',
+      date: 'Jul 2024',
+      featured: false
+    },
+    {
+      id: '4',
+      title: 'Buy any car web app',
+      description: 'A car marketplace web application that allows users to buy and sell cars online.',
+      longDescription: 'This project is a full-stack web application that provides a platform for users to browse, buy, and sell cars online, featuring admin authentication, car listings, search functionality.',
+      image: 'src/picture/cars.jpg',
+      technologies: ['React', 'Node.js', 'Express'],
+      githubUrl: 'https://github.com/BemnetKassa/buy-any-car',
+      liveUrl: 'https://buy-anycar.vercel.app/landingPage/dashboard',
+      date: 'Jul 2024',
+      featured: false
+    },
+     {
+      id: '5',
       title: 'Weather Dashboard-coming soon!',
       description: 'A responsive weather application with location-based forecasts and interactive maps.',
       longDescription: 'Created a comprehensive weather dashboard featuring current conditions, 7-day forecasts, interactive maps, and location-based weather alerts with beautiful data visualizations.',
@@ -47,7 +71,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: '4',
+      id: '6',
       title: 'Social Media Dashboard-coming soon!',
       description: 'Analytics dashboard for social media management with data visualization.',
       longDescription: 'Built a comprehensive social media analytics dashboard with real-time metrics, engagement tracking, content scheduling, and detailed reporting features.',
@@ -58,7 +82,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: '6',
+      id: '7',
       title: 'Fitness Tracker-coming soon!',
       description: 'Personal fitness tracking application with workout plans and progress analytics.',
       longDescription: 'Created a comprehensive fitness tracking app with workout planning, progress tracking, exercise library, and detailed analytics to help users achieve their fitness goals.',
@@ -68,29 +92,6 @@ const Projects = () => {
       date: 'Jul 2024',
       featured: false
     },
-      {
-      id: '7',
-      title: 'Smart Menu web app',
-      description: 'a smart menu web application that allows users to browse and order food from a digital menu using QR codes.',
-      longDescription: 'This project is a full-stack web application that enables restaurants to create digital menus accessible via QR codes, allowing customers to easily browse and place orders from their smartphones.',
-      image: 'src/picture/hero-dining.jpg',
-      technologies: ['vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
-      githubUrl: 'https://github.com/BemnetKassa/Smart-menu',
-      date: 'Jul 2024',
-      featured: false
-    },
-    {
-      id: '8',
-      title: 'Buy any car web app',
-      description: 'A car marketplace web application that allows users to buy and sell cars online.',
-      longDescription: 'This project is a full-stack web application that provides a platform for users to browse, buy, and sell cars online, featuring admin authentication, car listings, search functionality.',
-      image: 'src/picture/cars.jpg',
-      technologies: ['React', 'Node.js', 'Express'],
-      githubUrl: 'https://github.com/BemnetKassa/buy-any-car',
-      liveUrl: 'https://buy-anycar.vercel.app/landingPage/dashboard',
-      date: 'Jul 2024',
-      featured: false
-    }
 
   ];
 

@@ -78,7 +78,20 @@ const Projects = () => {
       githubUrl: 'https://github.com/BemnetKassa/Smart-menu',
       date: 'Jul 2024',
       featured: false
+    },
+    {
+      id: '8',
+      title: 'Buy any car web app',
+      description: 'A car marketplace web application that allows users to buy and sell cars online.',
+      longDescription: 'This project is a full-stack web application that provides a platform for users to browse, buy, and sell cars online, featuring admin authentication, car listings, search functionality.',
+      image: 'src/picture/car.jpg',
+      technologies: ['React', 'Node.js', 'Express'],
+      githubUrl: 'https://github.com',
+      liveUrl: '',
+      date: 'Jul 2024',
+      featured: false
     }
+
   ];
 
   const carouselItems: ThreeDCarouselItem[] = projects.map((project, index) => ({

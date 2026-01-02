@@ -58,13 +58,20 @@ const Hero = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
-                onClick={scrollToContact}
-                variant="outline" 
+                asChild
+                variant="outline"
                 size="lg"
                 className="flex items-center gap-2 border-primary text-primary hover:bg-primary/90 hover:text-primary-foreground transition-all duration-200 shadow"
               >
-                <Download className="w-4 h-4" />
-                Download CV
+                <a
+                  href="/cv.pdf"
+                  download
+                  className="flex items-center gap-2"
+                  aria-label="Download CV"
+                >
+                  <Download className="w-4 h-4" />
+                  Download CV
+                </a>
               </Button>
             </div>
 

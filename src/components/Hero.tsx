@@ -64,7 +64,7 @@ const Hero = () => {
                 className="flex items-center gap-2 border-primary text-primary hover:bg-primary/90 hover:text-primary-foreground transition-all duration-200 shadow"
               >
                 <a
-                  href="/cv.pdf"
+                  href="/cv.docx"
                   download
                   className="flex items-center gap-2"
                   aria-label="Download CV"

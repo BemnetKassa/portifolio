@@ -112,11 +112,19 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue-400/20 rounded-full blur-3xl"></div>
               {/* Profile image container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-                <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/40 shadow-2xl ring-4 ring-blue-400/10">
+                <div
+                  className="w-full h-full overflow-hidden border-4 border-primary/40 shadow-2xl ring-4 ring-blue-400/10"
+                  style={{
+                    borderRadius: '24px',
+                    transform: 'skew(-10deg, -6deg)',
+                    boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.2)',
+                  }}
+                >
                   <img
                     src={profileImg}
                     alt="Bemnet Kassa - Full Stack Developer"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-[120%] h-[120%] object-cover hover:scale-105 transition-transform duration-300"
+                    style={{ transform: 'skew(10deg, 6deg)' }}
                   />
                 </div>
                 {/* Floating elements */}

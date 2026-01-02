@@ -27,8 +27,13 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-                Hi, I'm{' '}
-                <AuroraTextEffect text="Bemnet Kassa" />
+                  <span className="inline sm:block">
+                    Hi, I'm
+                  </span>
+                  <span className="block sm:inline mt-2 sm:mt-0">
+                    {' '}
+                    <AuroraTextEffect text="Bemnet Kassa" />
+                  </span>
               </h1>
               <h2 className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground font-medium">
                 Full Stack Developer

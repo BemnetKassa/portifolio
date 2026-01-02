@@ -19,7 +19,7 @@ const Projects = () => {
       technologies: [ 'html', 'CSS', 'vanilla JavaScript', 'mySQL', 'php', ],
       githubUrl: 'https://github.com/BemnetKassa/Fruit-delivery-web-app',
       liveUrl: '',
-      date: 'Dec 2024',
+      date: 'Dec 2023',
       featured: true
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['Node.js', 'javaScript', 'express'],
       githubUrl: 'https://github.com/BemnetKassa/final-project-voting-system',
       liveUrl: '',
-      date: 'april 2025',
+      date: 'april 2024',
       featured: true
     },
    
@@ -41,7 +41,7 @@ const Projects = () => {
       description: 'a smart menu web application that allows users to browse and order food from a digital menu using QR codes.',
       longDescription: 'This project is a full-stack web application that enables restaurants to create digital menus accessible via QR codes, allowing customers to easily browse and place orders from their smartphones.',
       image: 'src/picture/hero-dining.jpg',
-      technologies: ['vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
+      technologies: ['vite',  'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
       githubUrl: 'https://github.com/BemnetKassa/Smart-menu',
       liveUrl: 'https://smart-menu-six.vercel.app/',
       date: 'Jul 2024',
@@ -56,7 +56,7 @@ const Projects = () => {
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/buy-any-car',
       liveUrl: 'https://buy-anycar.vercel.app/landingPage/dashboard',
-      date: 'Jul 2024',
+      date: 'sep 2025',
       featured: false
     },
     {
@@ -68,7 +68,7 @@ const Projects = () => {
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
       liveUrl: 'https://hotel-booking-and-room-management-s-two.vercel.app/public/dashboard',
-      date: 'Jul 2024',
+      date: 'apr 2025',
       featured: false
     },
      {
@@ -77,10 +77,10 @@ const Projects = () => {
       description: 'A responsive weather application with location-based forecasts and interactive maps.',
       longDescription: 'Created a comprehensive weather dashboard featuring current conditions, 7-day forecasts, interactive maps, and location-based weather alerts with beautiful data visualizations.',
       image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80',
-      technologies: ['React',],
+      technologies: ['next.js',],
       githubUrl: 'https://github.com',
       liveUrl: 'https://demo.com',
-      date: 'Oct 2024',
+      date: 'coming 2026',
       featured: false
     },
     {
@@ -91,7 +91,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
       technologies: ['vite', 'TypeScript', 'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
       githubUrl: 'https://github.com',
-      date: 'Jul 2024',
+      date: 'coming 2026',
       featured: false
     },
     

@@ -34,10 +34,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 section-padding bg-card/50">
+    <section id="about" className="py-12 section-padding bg-card/50">
       <div className="max-width-container">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -50,10 +50,10 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Description */}
           <motion.div
-            className="space-y-6"
+            className="space-y-4 pl-0"
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -85,7 +85,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.4 }}
               >
-                Outside of coding, I explore new technologies, contribute to open-source, and share insights with the developer community. I believe in lifelong learning and staying ahead of industry trends.
+                I am dedicated to continuous learning, open-source collaboration, and sharing insights with the developer community. My approach blends creativity, technical expertise, and a commitment to excellence.
               </motion.p>
               <motion.p
                 className="text-muted-foreground leading-relaxed"
@@ -94,7 +94,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.6 }}
               >
-                I'm actively seeking internship and freelance opportunities to contribute to innovative products and grow as a developer.
+                I'm open to internship and freelance opportunities where I can help build innovative products and grow as a developer.
               </motion.p>
             </div>
 

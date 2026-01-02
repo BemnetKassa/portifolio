@@ -113,7 +113,7 @@ const Hero = () => {
               {/* Profile image container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div
-                  className="w-full h-full overflow-hidden border-4 border-primary/40 shadow-2xl ring-4 ring-blue-400/10"
+                  className="w-full h-full overflow-hidden border-4 border-primary/40 shadow-2xl ring-4 ring-blue-400/10 flex items-center justify-center"
                   style={{
                     borderRadius: '24px',
                     transform: 'skew(-10deg, -6deg)',
@@ -123,8 +123,8 @@ const Hero = () => {
                   <img
                     src={profileImg}
                     alt="Bemnet Kassa - Full Stack Developer"
-                    className="absolute inset-0 w-[120%] h-[120%] object-cover hover:scale-105 transition-transform duration-300"
-                    style={{ transform: 'skew(10deg, 6deg)' }}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    style={{ transform: 'skew(10deg, 6deg) scale(1.35)', objectPosition: 'center' }}
                   />
                 </div>
                 {/* Floating elements */}

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Code, Database, Globe, Smartphone, Server, Palette } from 'lucide-react';
 
 const About = () => {
@@ -35,65 +36,109 @@ const About = () => {
   return (
     <section id="about" className="py-20 section-padding bg-card/50">
       <div className="max-width-container">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with year of experience creating 
-            digital solutions that bridge the gap between design and technology.
+            I'm a creative and passionate full-stack developer with a strong drive for building impactful digital experiences. My expertise bridges the gap between design and technology, delivering solutions that are both beautiful and functional.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Description */}
-          <div className="space-y-6 animate-fade-in">
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="prose prose-lg max-w-none">
-              <p className="text-muted-foreground leading-relaxed">
-                My journey into web development started during my Software Engineering studies, 
-                where I discovered my passion for creating user-centric websites. I love 
-                the challenge of turning complex problems into simple, beautiful solutions.
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing 
-                to open-source projects, or sharing knowledge with the developer community. 
-                I believe in continuous learning and staying up-to-date with industry trends.
-              </p>
-              
-              <p className="text-muted-foreground leading-relaxed">
-                I'm currently seeking internship opportunities and freelance projects where 
-                I can contribute to meaningful products and continue growing as a developer.
-              </p>
+              <motion.p
+                className="text-muted-foreground leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+              >
+                My journey began in Software Engineering, where I discovered a passion for crafting user-centric web applications.
+                <motion.span
+                  className="block text-lg font-semibold gradient-text mt-2"
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.7, delay: 0.3 }}
+                >
+                  I thrive on transforming complex challenges into <span className="bg-gradient-to-r from-primary to-fuchsia-500 bg-clip-text text-transparent">elegant, scalable, component-based, and intuitive solutions.</span>
+                </motion.span>
+              </motion.p>
+              <motion.p
+                className="text-muted-foreground leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+              >
+                Outside of coding, I explore new technologies, contribute to open-source, and share insights with the developer community. I believe in lifelong learning and staying ahead of industry trends.
+              </motion.p>
+              <motion.p
+                className="text-muted-foreground leading-relaxed"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.6 }}
+              >
+                I'm actively seeking internship and freelance opportunities to contribute to innovative products and grow as a developer.
+              </motion.p>
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-6">
+            <motion.div
+              className="grid grid-cols-3 gap-6 pt-6"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: 0.7 }}
+            >
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">10+</div>
+                <motion.div className="text-2xl font-bold text-primary" initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{ duration: 0.5, delay: 0.8 }}>10+</motion.div>
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2+</div>
+                <motion.div className="text-2xl font-bold text-primary" initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{ duration: 0.5, delay: 1 }}>2+</motion.div>
                 <div className="text-sm text-muted-foreground">Years</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-primary">planty</div>
+                <motion.div className="text-2xl font-bold text-primary" initial={{ scale: 0.8 }} whileInView={{ scale: 1 }} transition={{ duration: 0.5, delay: 1.2 }}>20+</motion.div>
                 <div className="text-sm text-muted-foreground">Technologies</div>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Right Column - Tech Stack */}
-          <div className="space-y-6 animate-slide-in">
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             <h3 className="text-2xl font-semibold mb-8">Technical Skills</h3>
-            
             <div className="grid gap-6">
               {skills.map((skill, index) => (
-                <div 
+                <motion.div
                   key={skill.category}
                   className="bg-background/50 rounded-lg p-6 hover-lift border border-border hover:border-primary/30"
-                  style={{ animationDelay: `${index * 0.1}s` }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.15 }}
                 >
                   <div className="flex items-center gap-3 mb-4">
                     <div className="p-2 bg-primary/10 rounded-lg text-primary">
@@ -101,7 +146,6 @@ const About = () => {
                     </div>
                     <h4 className="font-semibold text-lg">{skill.category}</h4>
                   </div>
-                  
                   <div className="flex flex-wrap gap-2">
                     {skill.technologies.map((tech) => (
                       <span
@@ -112,10 +156,10 @@ const About = () => {
                       </span>
                     ))}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -113,18 +113,33 @@ const Hero = () => {
               {/* Profile image container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 <div
-                  className="w-full h-full overflow-hidden border-4 border-primary/40 shadow-2xl ring-4 ring-blue-400/10 flex items-center justify-center"
+                  className="w-full h-full overflow-hidden border-4 border-primary/40 shadow-2xl ring-4 ring-blue-400/10 flex items-center justify-center group"
                   style={{
                     borderRadius: '24px',
                     transform: 'skew(-10deg, -6deg)',
                     boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.2)',
+                    transition: 'transform 0.4s cubic-bezier(.4,2,.3,1), box-shadow 0.4s',
+                  }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.transform = 'skew(-10deg, -6deg) scale(1.05) rotate(-2deg)';
+                    e.currentTarget.style.boxShadow = '0 12px 48px 0 rgba(0, 123, 255, 0.25)';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.transform = 'skew(-10deg, -6deg)';
+                    e.currentTarget.style.boxShadow = '0 8px 32px 0 rgba(0, 0, 0, 0.2)';
                   }}
                 >
                   <img
                     src={profileImg}
                     alt="Bemnet Kassa - Full Stack Developer"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    style={{ transform: 'skew(10deg, 6deg) scale(1.35)', objectPosition: 'center' }}
+                    className="w-full h-full object-cover transition-transform duration-400"
+                    style={{ transform: 'skew(10deg, 6deg) scale(1.35)', objectPosition: 'center', transition: 'transform 0.4s cubic-bezier(.4,2,.3,1)' }}
+                    onMouseEnter={e => {
+                      e.currentTarget.style.transform = 'skew(10deg, 6deg) scale(1.45)';
+                    }}
+                    onMouseLeave={e => {
+                      e.currentTarget.style.transform = 'skew(10deg, 6deg) scale(1.35)';
+                    }}
                   />
                 </div>
                 {/* Floating elements */}

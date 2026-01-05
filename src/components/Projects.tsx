@@ -64,11 +64,11 @@ const Projects = () => {
       title: 'FuelOps - Fuel management system',
       description: 'A fuel management web application that allows users to track and manage fuel consumption.',
       longDescription: 'This project is a full-stack web application that provides a platform for users to monitor and manage fuel consumption, featuring admin authentication, fuel logs, and reporting functionality. which is planed to takle the fuel black market issue in ethiopia',
-      image: 'src/picture/refueling.webp',
+      image: 'src/picture/refueling.jpg',
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
       liveUrl: 'https://hotel-booking-and-room-management-s-two.vercel.app/public/dashboard',
-      date: 'apr 2025',
+      date: 'mar 2025',
       featured: false
     },
     {

@@ -60,7 +60,19 @@ const Projects = () => {
       featured: false
     },
     {
-      id: '4',
+      id: '5',
+      title: 'FuelOps - Fuel management system',
+      description: 'A fuel management web application that allows users to track and manage fuel consumption.',
+      longDescription: 'This project is a full-stack web application that provides a platform for users to monitor and manage fuel consumption, featuring admin authentication, fuel logs, and reporting functionality. which is planed to takle the fuel black market issue in ethiopia',
+      image: 'src/picture/refueling.webp',
+      technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
+      githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
+      liveUrl: 'https://hotel-booking-and-room-management-s-two.vercel.app/public/dashboard',
+      date: 'apr 2025',
+      featured: false
+    },
+    {
+      id: '6',
       title: 'Hotel room booking web app',
       description: 'A hotel room booking web application that allows users to book rooms online.',
       longDescription: '.This project is a full-stack web application that provides a platform for users to browse, book, and manage hotel room reservations online, featuring admin authentication, room listings, search functionality.',
@@ -72,7 +84,7 @@ const Projects = () => {
       featured: false
     },
      {
-      id: '5',
+      id: '7',
       title: 'Weather Dashboard-coming soon!',
       description: 'A responsive weather application with location-based forecasts and interactive maps.',
       longDescription: 'Created a comprehensive weather dashboard featuring current conditions, 7-day forecasts, interactive maps, and location-based weather alerts with beautiful data visualizations.',
@@ -84,7 +96,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: '6',
+      id: '8',
       title: 'Fitness Tracker-coming soon!',
       description: 'Personal fitness tracking application with workout plans and progress analytics.',
       longDescription: 'Created a comprehensive fitness tracking app with workout planning, progress tracking, exercise library, and detailed analytics to help users achieve their fitness goals.',

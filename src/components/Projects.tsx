@@ -6,6 +6,7 @@ import AMUpic from '../picture/amu.jpg';
 import fuelOps from '../picture/refueling.jpg';
 import cars from '../picture/cars.jpg';
 import hotel from '../picture/room.webp'
+import menu from '../picture/menu.jpg'
 
 import ThreeDCarousel, { ThreeDCarouselItem } from './3d_carosel';
 
@@ -44,7 +45,7 @@ const Projects = () => {
       title: 'Smart Menu web app',
       description: 'a smart menu web application that allows users to browse and order food from a digital menu using QR codes.',
       longDescription: 'This project is a full-stack web application that enables restaurants to create digital menus accessible via QR codes, allowing customers to easily browse and place orders from their smartphones.',
-      image: 'src/picture/hero-dining.jpg',
+      image: menu,
       technologies: ['vite',  'React', 'Tailwind CSS', 'shadcn-ui', 'node.js', 'express', 'MongoDB'],
       githubUrl: 'https://github.com/BemnetKassa/Smart-menu',
       liveUrl: 'https://smart-menu-six.vercel.app/',

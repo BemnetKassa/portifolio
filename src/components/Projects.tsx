@@ -3,6 +3,10 @@ import ProjectCard, { Project } from './ProjectCard';
 import { Button } from '@/components/ui/button';
 import fruitPic from '../picture/p1.jpg';
 import AMUpic from '../picture/amu.jpg';
+import fuelOps from '../picture/refueling.jpg';
+import cars from '../picture/cars.jpg';
+import hotel from '../picture/room.webp'
+
 import ThreeDCarousel, { ThreeDCarouselItem } from './3d_carosel';
 
 const Projects = () => {
@@ -52,7 +56,7 @@ const Projects = () => {
       title: 'Buy any car web app',
       description: 'A car marketplace web application that allows users to buy and sell cars online.',
       longDescription: 'This project is a full-stack web application that provides a platform for users to browse, buy, and sell cars online, featuring admin authentication, car listings, search functionality.',
-      image: 'src/picture/cars.jpg',
+      image: cars,
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/buy-any-car',
       liveUrl: 'https://buy-anycar.vercel.app/landingPage/dashboard',
@@ -64,7 +68,7 @@ const Projects = () => {
       title: 'FuelOps - Fuel management system',
       description: 'A fuel management web application that allows users to track and manage fuel consumption.',
       longDescription: 'This project is a full-stack web application that provides a platform for users to monitor and manage fuel consumption, featuring admin authentication, fuel logs, and reporting functionality. which is planed to takle the fuel black market issue in ethiopia',
-      image: 'src/picture/refueling.jpg',
+      image: fuelOps,
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
       liveUrl: 'https://fuelops-last.vercel.app/',
@@ -76,7 +80,7 @@ const Projects = () => {
       title: 'Hotel room booking web app',
       description: 'A hotel room booking web application that allows users to book rooms online.',
       longDescription: '.This project is a full-stack web application that provides a platform for users to browse, book, and manage hotel room reservations online, featuring admin authentication, room listings, search functionality.',
-      image: 'src/picture/room.webp',
+      image: hotel,
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
       liveUrl: 'https://hotel-booking-and-room-management-s-two.vercel.app/public/dashboard',

@@ -67,7 +67,7 @@ const Projects = () => {
       image: 'src/picture/refueling.jpg',
       technologies: ['nextjs','Tailwind CSS','Node.js', 'Express', 'supabase'],
       githubUrl: 'https://github.com/BemnetKassa/Hotel-booking-and-room-management-system/tree/main/frontend',
-      liveUrl: 'https://hotel-booking-and-room-management-s-two.vercel.app/public/dashboard',
+      liveUrl: 'https://fuelops-last.vercel.app/',
       date: 'mar 2025',
       featured: false
     },

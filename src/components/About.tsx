@@ -33,33 +33,45 @@ const About = () => {
     }
   ];
 
-  return (
-    <section id="about" className="py-12 section-padding bg-card/50">
-      <div className="max-width-container">
-        <motion.div
-          className="text-center mb-8"
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            About <span className="gradient-text">Me</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a creative and passionate full-stack developer with a strong drive for building impactful digital experiences. My expertise bridges the gap between design and technology, delivering solutions that are both beautiful and functional.
-          </p>
-        </motion.div>
-
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left Column - Description */}
+    return (
+      <section id="about" className="relative py-12 section-padding overflow-hidden">
+        {/* Video Background */}
+        <video
+          src="/bk.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          poster="/thumbnail.jpg" // Optional: add a poster image in public folder
+        />
+        {/* Overlay for readability */}
+        {/* Content */}
+        <div className="max-width-container relative z-20">
           <motion.div
-            className="space-y-4 pl-0"
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            className="text-center mb-8"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
           >
-            <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
+              About <span className="gradient-text">Me</span>
+            </h2>
+            <p className="text-lg text-white/80 max-w-3xl mx-auto">
+              I'm a creative and passionate full-stack developer with a strong drive for building impactful digital experiences. My expertise bridges the gap between design and technology, delivering solutions that are both beautiful and functional.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Left Column - Description */}
+            <motion.div
+              className="space-y-6 pl-0"
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <div className="prose prose-lg max-w-none text-white">
               <motion.p
                 className="text-muted-foreground leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
@@ -129,7 +141,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-2xl font-semibold mb-8">Technical Skills</h3>
+            <h3 className="text-2xl font-semibold mb-8 text-white">Technical Skills</h3>
             <div className="grid gap-6">
               {skills.map((skill, index) => (
                 <motion.div

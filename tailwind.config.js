@@ -63,6 +63,24 @@ export default {
         inter: ["Inter", "sans-serif"],
       },
       keyframes: {
+                "fade-in-up": {
+                  "0%": {
+                    opacity: "0",
+                    transform: "translateY(40px)",
+                  },
+                  "100%": {
+                    opacity: "1",
+                    transform: "translateY(0)",
+                  },
+                },
+                "gradient-x": {
+                  "0%, 100%": {
+                    backgroundPosition: "0% 50%",
+                  },
+                  "50%": {
+                    backgroundPosition: "100% 50%",
+                  },
+                },
         wave: {
           '0%, 100%': { transform: 'rotate(0deg) scale(1)' },
           '10%': { transform: 'rotate(14deg) scale(1.1)' },
@@ -110,6 +128,8 @@ export default {
         },
       },
       animation: {
+          "fade-in-up": "fade-in-up 0.8s cubic-bezier(.77,0,.18,1.01) both",
+          "gradient-x": "gradient-x 3s ease-in-out infinite",
         wave: 'wave 2s infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

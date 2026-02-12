@@ -127,21 +127,22 @@ const Projects = () => {
   }));
 
   return (
-    <section id="projects" className="py-20 section-padding">
+    <section id="projects" className="py-24 section-padding bg-gradient-to-b from-white via-blue-50 to-purple-50 animate-fade-in-up">
       <div className="max-width-container">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            My <span className="gradient-text">Projects</span>
+        <div className="text-center mb-20 animate-fade-in-up">
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight relative inline-block">
+            <span className="pr-2">My</span>
+            <span className="gradient-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">Projects</span>
+            <span className="block h-1 w-24 mx-auto mt-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-gradient-x"></span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills in full-stack development, 
-            UI/UX design, and problem-solving.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in delay-100">
+            Here are some of my recent projects that showcase my skills in full-stack development, UI/UX design, and problem-solving.
           </p>
         </div>
 
         {/* All Projects Carousel */}
-        <div className="mb-24">
+        <div className="mb-24 animate-fade-in-up delay-200">
           <ThreeDCarousel items={carouselItems} />
         </div>
       </div>

@@ -99,13 +99,21 @@ const ThreeDCarousel = ({
     }
   };
 
+  // Enhanced 3D transform and animation
   const getCardAnimationClass = (index: number) => {
-    if (index === active) return "scale-100 opacity-100 z-20";
-    if (index === (active + 1) % items.length)
-      return "translate-x-[40%] scale-95 opacity-60 z-10";
-    if (index === (active - 1 + items.length) % items.length)
-      return "translate-x-[-40%] scale-95 opacity-60 z-10";
-    return "scale-90 opacity-0";
+    const offset = index - active;
+    if (offset === 0) {
+      return "z-30 scale-105 opacity-100 shadow-2xl rotate-y-0";
+    } else if (offset === 1 || offset === -items.length + 1) {
+      return "z-20 scale-95 opacity-70 shadow-lg rotate-y-10 translate-x-[30%] blur-[1px]";
+    } else if (offset === -1 || offset === items.length - 1) {
+      return "z-20 scale-95 opacity-70 shadow-lg rotate-y-[-10deg] translate-x-[-30%] blur-[1px]";
+    } else if (offset === 2 || offset === -items.length + 2) {
+      return "z-10 scale-90 opacity-40 rotate-y-20 translate-x-[60%] blur-[2px]";
+    } else if (offset === -2 || offset === items.length - 2) {
+      return "z-10 scale-90 opacity-40 rotate-y-[-20deg] translate-x-[-60%] blur-[2px]";
+    }
+    return "scale-75 opacity-0 pointer-events-none";
   };
 
   const handleCardClick = (index: number) => {
@@ -139,29 +147,31 @@ const ThreeDCarousel = ({
               {items.map((item, index) => (
                 <div
                   key={item.id}
-                  className={`absolute top-0 w-full max-w-md transform transition-all duration-500 ${getCardAnimationClass(
-                    index
-                  )}`}
+                  className={`absolute top-0 w-full max-w-md transform transition-transform duration-700 ease-[cubic-bezier(.77,0,.18,1.01)] ${getCardAnimationClass(index)} group`}
                   onClick={() => handleCardClick(index)}
                 >
                   <Card
-                    className={`overflow-hidden bg-background h-[${cardHeight}px] border-2 border-blue-500/50 shadow-lg hover:shadow-blue-500/20 flex flex-col cursor-pointer`}
+                    className={`overflow-hidden bg-background h-[${cardHeight}px] border-2 border-blue-500/50 shadow-lg hover:shadow-blue-500/40 flex flex-col cursor-pointer group-hover:scale-110 group-hover:shadow-2xl transition-transform duration-300`}
+                    style={{
+                      perspective: '1200px',
+                    }}
                   >
                     <div
-                      className="relative bg-black p-6 flex items-center justify-center h-48 overflow-hidden"
+                      className="relative bg-black p-6 flex items-center justify-center h-48 overflow-hidden group-hover:scale-105 group-hover:brightness-110 transition-all duration-300"
                       style={{
                         backgroundImage: `url(${item.imageUrl})`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
+                        boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
                       }}
                     >
-                      <div className="absolute inset-0 bg-black/50" />
-                      <div className="relative z-10 text-center text-white">
-                        <h3 className="text-2xl font-bold mb-2">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                      <div className="relative z-10 text-center text-white animate-fade-in">
+                        <h3 className="text-2xl font-bold mb-2 tracking-wider drop-shadow-lg">
                           {item.brand.toUpperCase()}
                         </h3>
-                        <div className="w-12 h-1 bg-white mx-auto mb-2" />
-                        <p className="text-sm ">{item.title}</p>
+                        <div className="w-12 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mb-2 animate-gradient-x" />
+                        <p className="text-sm font-semibold drop-shadow-md">{item.title}</p>
                       </div>
                     </div>
 
@@ -189,15 +199,15 @@ const ThreeDCarousel = ({
                         </div>
 
                         <button
-                          className="text-black-600 flex items-center hover:underline relative group focus:outline-none"
+                          className="text-blue-700 flex items-center font-bold hover:underline relative group focus:outline-none transition-all duration-200"
                           onClick={(e) => {
                             e.stopPropagation();
                             setSelectedProject(item);
                           }}
                         >
                           <span className="relative z-10">Learn more</span>
-                          <ArrowRight className="ml-2 w-4 h-4 relative z-10 transition-transform group-hover:translate-x-1" />
-                          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gray-500 transition-all duration-300 group-hover:w-full"></span>
+                          <ArrowRight className="ml-2 w-4 h-4 relative z-10 transition-transform group-hover:translate-x-2 group-hover:scale-125" />
+                          <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
                         </button>
                       </div>
                     </CardContent>

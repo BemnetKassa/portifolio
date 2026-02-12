@@ -128,7 +128,7 @@ const ThreeDCarousel = ({
     <>
       <section
         id="ThreeDCarousel"
-        className="bg-transparent min-w-full mx-auto flex items-center justify-center p-4 shadow-xl rounded-lg"
+        className="bg-transparent min-w-full mx-auto flex items-center justify-center p-4 pt-10 shadow-xl rounded-lg"
       >
         <div
           className="w-full px-4 sm:px-6 lg:px-8 

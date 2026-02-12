@@ -127,7 +127,7 @@ const Projects = () => {
   }));
 
   return (
-    <section id="projects" className="py-24 section-padding relative overflow-hidden animate-fade-in-up">
+    <section id="projects" className="py-20 section-padding relative overflow-hidden animate-fade-in-up">
       {/* Decorative gradient and pattern background */}
       <div className="absolute inset-0 -z-10">
         <div className="w-full h-full bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 opacity-90" />

@@ -127,7 +127,20 @@ const Projects = () => {
   }));
 
   return (
-    <section id="projects" className="py-24 section-padding bg-gradient-to-b from-white via-blue-50 to-purple-50 animate-fade-in-up">
+    <section id="projects" className="py-24 section-padding relative overflow-hidden animate-fade-in-up">
+      {/* Decorative gradient and pattern background */}
+      <div className="absolute inset-0 -z-10">
+        <div className="w-full h-full bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 opacity-90" />
+        {/* Subtle pattern overlay */}
+        <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 800 600" preserveAspectRatio="none">
+          <defs>
+            <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="2" fill="#a5b4fc" />
+            </pattern>
+          </defs>
+          <rect width="800" height="600" fill="url(#dots)" />
+        </svg>
+      </div>
       <div className="max-width-container">
         {/* Section Header */}
         <div className="text-center mb-20 animate-fade-in-up">
@@ -136,13 +149,13 @@ const Projects = () => {
             <span className="gradient-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-gradient-x">Projects</span>
             <span className="block h-1 w-24 mx-auto mt-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full animate-gradient-x"></span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in delay-100">
+          <p className="text-lg pb-0 text-muted-foreground max-w-2xl mx-auto animate-fade-in delay-100">
             Here are some of my recent projects that showcase my skills in full-stack development, UI/UX design, and problem-solving.
           </p>
         </div>
 
         {/* All Projects Carousel */}
-        <div className="mb-24 animate-fade-in-up delay-200">
+        <div className="mb-20 animate-fade-in-up delay-200">
           <ThreeDCarousel items={carouselItems} />
         </div>
       </div>

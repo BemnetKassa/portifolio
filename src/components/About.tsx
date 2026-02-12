@@ -42,10 +42,11 @@ const About = () => {
           loop
           muted
           playsInline
+          poster="/thumbnail.jpg"
           className="absolute inset-0 w-full h-full object-cover z-0"
-          poster="/thumbnail.jpg" // Optional: add a poster image in public folder
         />
         {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/70 z-10" />
         {/* Content */}
         <div className="max-width-container relative z-20">
           <motion.div

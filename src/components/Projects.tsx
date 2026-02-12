@@ -127,20 +127,7 @@ const Projects = () => {
   }));
 
   return (
-    <section id="projects" className="py-20 section-padding relative overflow-hidden animate-fade-in-up">
-      {/* Decorative gradient and pattern background */}
-      <div className="absolute inset-0 -z-10">
-        <div className="w-full h-full bg-gradient-to-br from-blue-400 via-purple-300 to-pink-300 opacity-95" />
-        {/* Subtle pattern overlay */}
-        <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 800 600" preserveAspectRatio="none">
-          <defs>
-            <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-              <circle cx="2" cy="2" r="2" fill="#6366f1" />
-            </pattern>
-          </defs>
-          <rect width="800" height="600" fill="url(#dots)" />
-        </svg>
-      </div>
+    <section id="projects" className="py-20 section-padding bg-background animate-fade-in-up">
       <div className="max-width-container">
         {/* Section Header */}
         <div className="text-center mb-20 animate-fade-in-up">
